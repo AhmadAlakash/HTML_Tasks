@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>Forms</h1>
+    <form action="test.py" method="post">
+      <label for="user_name">User Name</label>
+      <br />
+      <input name="user_name" type="text" required placeholder="your name" />
+      <hr />
+      <label for="pass">Password</label>
+      <br />
+      <input name="pass" type="password" placeholder="complex pass is better" />
+      <hr />
+      <label for="tel">Your Number</label>
+      <br />
+      <input name="tel" type="number" placeholder="123(234)201000+" />
+      <hr />
+      <label for="email">Email</label>
+      <br />
+      <input
+        name="email"
+        type="email"
+        required
+        placeholder="alala@(gmail).com"
+      />
+      <hr />
+      <label for="sub">Subject</label>
+      <br />
+      <input name="sub" type="text" placeholder="what you need " />
+      <br />
+      <input type="hidden" name="hidden" value="123123" />
+
+      <input type="reset" value="Empty Form" />
+      <input type="submit" value="Send Data" />
+    </form>
+    <hr />
+    <hr />
+    <hr />
+
+    <input
+      type="range"
+      name="range"
+      id=""
+      minlength="100"
+      maxlength="400"
+      step="100"
+    />
+  </body>
+</html>
